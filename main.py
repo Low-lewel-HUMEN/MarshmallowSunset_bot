@@ -13,6 +13,9 @@ import storage
 # main logic
 storage.init_bot()
 
+# init list
+
+
 from storage import dp
 from storage import bot
 
