@@ -5,9 +5,6 @@ from config.botuk_token import BOT_TOKEN
 bot = None
 dp = None
 
-# access
-access_cm_add_command = None
-
 # list
 command_list = None
 

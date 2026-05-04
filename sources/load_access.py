@@ -1,8 +1,7 @@
 import json
+import main_storage
 
-import storage
-
-async def add_command_access():
+async def add_command():
     with open("access/add_command.json", "r") as file:
         _list = json.load(file)
     return _list

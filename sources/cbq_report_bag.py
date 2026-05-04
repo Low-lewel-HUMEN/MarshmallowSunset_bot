@@ -1,5 +1,5 @@
 from aiogram import types
-from storage import bot
+from main_storage import bot
 
 async def sour_cbq__report_bag_button(callback_var: types.CallbackQuery):
     await bot.send_message(

@@ -1,7 +1,6 @@
 from aiogram.types import Message
-from aiogram.filters import Command
 
-from storage import bot
+from main_storage import bot
 
 from config.start_FILE_ID_animation import FILE_ID
 from text.cm_start import WELCOME_TEXT

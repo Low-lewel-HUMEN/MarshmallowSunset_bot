@@ -1,7 +1,7 @@
 from aiogram import F
 from aiogram import types
 
-from storage import dp
+from main_storage import dp
 from sources.cbq_report_bag import sour_cbq__report_bag_button
 
 @dp.callback_query(F.data == "report_bag_button")

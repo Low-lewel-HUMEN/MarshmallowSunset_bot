@@ -4,7 +4,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.filters import CommandObject
 
-from storage import dp
+from main_storage import dp
 
 @dp.message(Command("add_command"))
 async def add_command(message: Message, arg: CommandObject):

@@ -8,16 +8,16 @@ else:
     sys.exit()
 
 import asyncio
-import storage
+import main_storage
 
 # main logic
-storage.init_bot()
+main_storage.init_bot()
 
 # init list
 
 
-from storage import dp
-from storage import bot
+from main_storage import dp
+from main_storage import bot
 
 # include handlers
 from headers.cm_start import *

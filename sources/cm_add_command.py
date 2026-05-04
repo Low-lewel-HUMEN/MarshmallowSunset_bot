@@ -1,13 +1,13 @@
 from aiogram.types import Message
 from aiogram.filters import CommandObject
 
-import storage
-from storage import bot
+from main_storage import bot
+import storage.cm_accesses
 
 from text.cm_add_command import ERROR, LUCK, ERROR_NOT_ARG
 
 async def add_command(message: Message, arg: CommandObject):
-    if message.chat.id not in storage.access_cm_add_command:
+    if message.chat.id not in storage.cm_accesses.ACCESS_add_command:
         bot.send_message(
             chat_id=message.chat.id,
             text=ERROR
@@ -24,4 +24,4 @@ async def add_command(message: Message, arg: CommandObject):
         return 1
     
     new_command = arg_array[0]
-    storage.command_list.append()
+    storageTTT.command_list.append()
