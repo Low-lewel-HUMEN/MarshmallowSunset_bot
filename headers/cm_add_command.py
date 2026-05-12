@@ -1,4 +1,4 @@
-import sources.cm_add_command
+import sources
 
 from aiogram.types import Message
 from aiogram.filters import Command
@@ -8,4 +8,4 @@ from main_storage import dp
 
 @dp.message(Command("add_command"))
 async def add_command(message: Message, arg: CommandObject):
-    await sources.cm_add_command.add_command(message, arg)
+    await sources.internal_cm_add_command(message, arg)

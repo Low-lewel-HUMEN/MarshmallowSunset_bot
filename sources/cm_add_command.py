@@ -6,7 +6,7 @@ import storage.cm_accesses
 
 from text.cm_add_command import ERROR, LUCK, ERROR_NOT_ARG
 
-async def add_command(message: Message, arg: CommandObject):
+async def cm_add_command(message: Message, arg: CommandObject):
     if message.chat.id not in storage.cm_accesses.ACCESS_add_command:
         bot.send_message(
             chat_id=message.chat.id,

@@ -23,7 +23,7 @@ from main_storage import bot
 from headers.cm_start import *
 from headers.cm_help import *
 from headers.cm_report import *
-from headers.cbq_report_bag import *
+from headers.handler_bag_inlineButton import *
 
 if __name__ == "__main__":
     print("Botuk started!")

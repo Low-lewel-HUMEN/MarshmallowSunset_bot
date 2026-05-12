@@ -1,7 +1,7 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
 
-async def init_report_menu():
+async def get_inlineKeyboard_report_cm():
     report_menu = InlineKeyboardBuilder()
     report_menu.row(
         types.InlineKeyboardButton(
